@@ -14,4 +14,13 @@ public class BillTest {
 
         assertEquals((float) expectedTotal, actualTotal);
     }
+
+    @Test
+    void testGetTax() {
+        Bill bill = new Bill();
+        int expectedTax = 100 - 2; // 98
+        int actualTax = bill.getTax();
+
+        assertEquals(expectedTax, actualTax);
+    }
 }

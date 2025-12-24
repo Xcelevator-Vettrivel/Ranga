@@ -8,4 +8,8 @@ public class Bill {
     public int getBill(){
         return parotta+fried_rice+noodles;
     }
+
+    public int getTax(){
+        return fried_rice-2;
+    }
 }
